@@ -7,7 +7,7 @@ public class Q3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of m: ");
         int m = sc.nextInt();
-        System.out.println("Enter the values in the array: ");
+        System.out.println("Enter the values in first array: ");
         int a[][] = new int[m][m];
         for(int i=0; i<m; i++){
             for(int j=0; j<m; j++){
@@ -35,22 +35,3 @@ public class Q3 {
     }
 
 }
-
-/**
- * Input:
- * 3
- * 1
- * 2
- * 3
- * 1
- * 2
- * 3
- * 1
- * 2
- * 3
- * 
- * Output:
- * 14 14 14
- * 14 14 14
- * 14 14 14
- */
