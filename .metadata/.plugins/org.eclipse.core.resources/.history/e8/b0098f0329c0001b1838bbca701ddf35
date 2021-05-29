@@ -1,0 +1,30 @@
+package programs;
+
+import java.util.*;
+
+public class Q7 {
+	public static void main(String[] a) {
+		// Input
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the order of matrix: ");
+		int n = sc.nextInt();
+		System.out.println("Enter the elements in the array: ");
+		int arr[][] = new int[n][n];
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				arr[i][j] = sc.nextInt();
+			}
+		}
+		
+		// Sort 
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n-1-i; j++) {
+				if(arr[i][j] > arr[i][j+1]) {
+					int temp = arr[i][j];
+					arr[i][j] = arr[i][j+1];
+					arr[i][j+1] = temp;
+				}
+			}
+		}
+	}
+}
