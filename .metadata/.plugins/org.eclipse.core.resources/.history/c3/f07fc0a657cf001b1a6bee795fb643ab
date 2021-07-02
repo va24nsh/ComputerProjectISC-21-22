@@ -1,0 +1,26 @@
+package programs;
+
+import java.util.*;
+
+public class Q10 {
+	// Square of digits
+	int sqdig(int num) {
+		int sumofdig = 0;
+		while(num!=0) {
+			sumofdig += (num%10) * (num%10);
+			num /= 10;
+		}
+		return sqdig(sumofdig);
+	}
+	
+	public static void main(String[] args) {
+		// Class Object
+		Q10 obj = new Q10();
+		// Input
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int n = sc.nextInt();
+		
+		System.out.println("Sum of digits of 25 is "+obj.sqdig(25));
+	}
+}
