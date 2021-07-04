@@ -78,5 +78,5 @@ public class Count {
  * Number of vowels = 1
  * Number of consonants = 4
  * Number of spaces = 0
- * Number of secial characters = 0 
+ * Number of special characters = 0 
  */
