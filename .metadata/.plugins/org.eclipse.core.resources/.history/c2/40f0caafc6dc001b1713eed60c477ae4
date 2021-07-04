@@ -70,13 +70,3 @@ public class Count {
 		obj.input();
 	}
 }
-/**
- * Input:
- * vansh
- * 
- * Output:
- * Number of vowels = 1
- * Number of consonants = 4
- * Number of spaces = 0
- * Number of secial characters = 0 
- */
