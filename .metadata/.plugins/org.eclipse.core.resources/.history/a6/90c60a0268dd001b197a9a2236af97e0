@@ -21,15 +21,13 @@ public class Q10 {
 		Q10 obj = new Q10();
 		System.out.println("Enter the number to be verified: ");
 		int number = sc.nextInt();
-		if(obj.evSum(number) == 1 || obj.evSum(number) == 7) System.out.println(number+" is a Happy Number");
-		else System.out.println(number+" is not a happy number");
+		if(obj.evSum(number) == 1 || obj.evSum(number) == 7) System.out.println("Happy Number");
+		else System.out.println("Not a happy number");
 	}
 }
 /**
- * Input:
- * Enter the number to be verified: 
- * 28
  * 
- * Output:
- * 28 is a Happy Number
+ * 
+ * 
+ * 
  */
