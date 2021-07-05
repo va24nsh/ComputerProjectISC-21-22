@@ -1,0 +1,37 @@
+package programs;
+
+import java.util.*;
+
+public class Q16 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Q16 obj = new Q16();
+		System.out.println("Enter the string: ");
+		String s_args = sc.nextLine();
+		obj.stringmanipulation(s_args);
+		sc.close();
+	}
+	
+	void stringmanipulation(String s) {
+		System.out.println("The String is: "+s);
+		StringTokenizer st = new StringTokenizer(s);
+		int wrds_len = st.countTokens();
+		String smallest_word = st.nextToken();
+		for(int i=0; i<wrds_len-1; i++) {
+			String tok = st.nextToken();
+			if(tok.length() < smallest_word.length()) {
+				smallest_word = tok;
+				System.out.println("One of the smallest words is: "+smallest_word);
+			}
+		}
+		StringTokenizer st1 = new StringTokenizer(s);
+		for(int i=0; i<wrds_len; i++) {
+			String tok = st1.nextToken();
+			if(tok.indexOf(smallest_word) != -1) {
+				System.out.println("The word "+tok+" also contains the smallest word");
+			}
+		}
+		
+		
+	}
+}
