@@ -27,11 +27,3 @@ public class Convert {
 		obj.display();
 	}
 }
-/*
- * Input:
- * Enter the decimal number: 
- * 1101
- * 
- * Output:
- * Decimal equivalent is: 13
- */
