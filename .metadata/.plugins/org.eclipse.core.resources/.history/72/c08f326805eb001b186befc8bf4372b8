@@ -1,0 +1,22 @@
+package programs;
+
+import java.util.*;
+
+public class Repeat_string {
+	String repeat(String s, int n) {
+		if(n == 0) return "";
+		else {
+			return s + repeat(s, n-1);
+		}
+	}
+	
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		Repeat_string obj = new Repeat_string();
+		System.out.println("Enter the string and it's repetition value: ");
+		String S = sc.nextLine();
+		int N = sc.nextInt();
+		System.out.println(obj.repeat(S, N));
+		sc.close();
+	}
+}

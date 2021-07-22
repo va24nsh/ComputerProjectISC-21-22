@@ -1,0 +1,21 @@
+package programs;
+
+import java.util.*;
+
+public class Reverse_of_digits {
+	int reverseDigits(int n) {
+		if(n == 0) return 0;
+		else {
+			return ((n%10)*10) + reverseDigits(n/10);
+		}
+	}
+
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		Reverse_of_digits obj = new Reverse_of_digits();
+		System.out.println("Enter the number to be reversed: ");
+		int N = sc.nextInt();
+		System.out.println(obj.reverseDigits(N));
+		sc.close();
+	}
+}

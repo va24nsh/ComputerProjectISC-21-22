@@ -1,0 +1,35 @@
+package programs;
+
+import java.util.*;
+import java.lang.Math;
+
+public class Reverse_of_digits {
+	int p=0;
+	Reverse_of_digits(int P){
+		p=P;
+	}
+	
+	int reverseDigits(int n) {
+		if(n == 0) return 0;
+		else {
+			int d = n%10;
+			p--;
+			return (d*(int)Math.pow(10, p)) + reverseDigits(n/10);
+		}
+	}
+
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to be reversed: ");
+		int N = sc.nextInt();
+		int temp = N;
+		int count=0;
+		while(temp>0) {
+			temp = temp/10;
+			count++;
+		}
+		Reverse_of_digits obj = new Reverse_of_digits(count);
+		System.out.println(obj.reverseDigits(N));
+		sc.close();
+	}
+}

@@ -9,7 +9,7 @@ public class Convert {
 		System.out.println("Enter the binary number: ");
 		binum = sc.nextInt();
 		String check = Integer.toString(binum);
-		if(check.indexOf('2') >= 0 || check.indexOf('3') >= 0 || check.indexOf('4') >= 0 || check.indexOf('5') >= 0 || check.indexOf('6') >= 0 || check.indexOf('7') >= 0 || check.indexOf('8') >= 0 || check.indexOf('9') >= 0){
+		if(check.indexOf('2') >= 0 && check.indexOf('3') >= 0 && check.indexOf('4') >= 0 && check.indexOf('5') >= 0 && check.indexOf('6') >= 0 && check.indexOf('7') >= 0 && check.indexOf('8') >= 0 && check.indexOf('9') >= 0){
 			System.out.println("Wrong Input!!");
 			System.exit(0);
 		}

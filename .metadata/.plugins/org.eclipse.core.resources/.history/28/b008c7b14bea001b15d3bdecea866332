@@ -1,0 +1,26 @@
+package programs;
+
+/**
+ * Question: 
+ * Write a program in java to input a word from the user and remove the consecutive repeated 
+ * characters by replacing the sequence of repeated characters by it's single occurrence.
+ */
+
+public class Q1 {
+	public static void main(String a[]) {
+		
+	}
+
+	public static void main(String[] args) {
+		(0)
+	}
+
+}
+
+/**
+ * Input: 
+ * pppiiiccckkkkk 
+ * 
+ * Output:
+ * pick
+ */
