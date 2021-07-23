@@ -1,0 +1,22 @@
+package recursion;
+
+import java.util.*;
+
+public class Multiplication {
+	
+	int mul(int a, int b) {
+		if(b == 1) return a;
+		else if(b == 0) return 0;
+		else return a + mul(a, b-1);
+	}
+	
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		Multiplication obj = new Multiplication();
+		System.out.println("Enter the numbers to be multiplied: ");
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		System.out.println(obj.mul(A, B));
+		sc.close();
+	}
+}
